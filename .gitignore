@@ -12,3 +12,4 @@ tools/font_preview.svg.png
 
 # third-party dev tooling (fishdraw reference copy is a submodule)
 vendor/pebble-watchface-agent-skill/
+pebble_screenshot_*.png

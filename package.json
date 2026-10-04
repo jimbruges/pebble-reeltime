@@ -1,7 +1,7 @@
 {
   "name": "reeltime-watchface",
   "author": "jimbruges",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "keywords": ["pebble-app"],
   "private": true,
   "dependencies": {},
@@ -29,11 +29,12 @@
     ],
     "resources": {
       "media": [
-        {
-          "name": "MENU_ICON",
-          "file": "images/menu_icon.png",
-          "type": "png"
-        }
+      {
+        "name": "MENU_ICON",
+        "file": "images/menu_icon.png",
+        "type": "png",
+        "menuIcon": true
+      }
       ]
     }
   }

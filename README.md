@@ -16,10 +16,12 @@ The watchface shows the fish, the time, and the date.
   PebbleKit JS; only the resulting polylines are sent to the watch.
 - Polylines are simplified and chunked (600 bytes per AppMessage) with a
   checksum, then animated on the watch as a ~3.5s quick-draw reveal.
-- **Time mode** (optional): the fish is seeded from the wall-clock start of the
-  current interval, so the same interval always shows the same fish — on any
-  boot, reinstall, or phone. Turning it on also gives the fish a taller frame by
-  reclaiming the name row.
+- **Time mode** (optional): the fish is seeded from the exact date and time
+  (UTC, to the minute) at which the current interval started — e.g.
+  `2026-10-04 11:00` for hourly, `2026-10-04 11:23` for per-minute — so every
+  tick *and* every calendar day gets its own fish, while the same moment always
+  reproduces the same fish on any boot, reinstall, or phone. Turning it on also
+  gives the fish a taller frame by reclaiming the name row.
 - **Random mode** (default pairing with names): each interval gets its own fish
   with a generated Latin binomen displayed above the time (auto-fitted to the
   frame width).
@@ -33,7 +35,7 @@ Open the config page from the Pebble app (watchface → settings):
 | Setting | Options |
 |---|---|
 | New fish every… | 1 minute / 1 hour / 12 hours |
-| Time-seeded mode | deterministic fish per interval, taller frame, no name |
+| Time-seeded mode | fish seeded from date + time of the interval start; taller frame, no name |
 | Border | thin frame around the fish, on/off |
 | Colours | background, fish, text — 19-colour swatches or random |
 | Line thickness | Thin (1px) / Normal (2px) / Bold (3px) |

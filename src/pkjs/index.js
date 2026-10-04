@@ -398,7 +398,7 @@ function buildConfigHtml(s) {
     '<label class="chk"><input type="checkbox" id="bd"' + (s.border ? ' checked' : '') +
         '> Draw a border around the fish<small>Borderless mode lets the fish fill the whole screen</small></label>',
     '<label class="chk"><input type="checkbox" id="tsm"' + (s.seedmode ? ' checked' : '') +
-        '> Seed fish with time &amp; date<small>The clock decides each fish; no Latin name is shown and the fish gets the extra space</small></label>',
+        '> Seed fish with time &amp; date<small>Seeded from the exact date and time, so each hour (or minute) and each day gets its own fish. No Latin name — the fish gets the extra space</small></label>',
     '<p class="sub">Colours</p>',
     '<div class="crow"><span>Line thickness</span><div class="seg" id="lwseg">',
     '<b class="sg' + (s.lw === 1 ? ' on' : '') + '" data-v="1" onclick="segpick(this)">Thin</b>',
