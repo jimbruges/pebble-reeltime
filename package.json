@@ -1,0 +1,40 @@
+{
+  "name": "reeltime-watchface",
+  "author": "jimbruges",
+  "version": "1.0.0",
+  "keywords": ["pebble-app"],
+  "private": true,
+  "dependencies": {},
+  "pebble": {
+    "displayName": "ReelTime",
+    "uuid": "7c56478b-43bf-4260-9c2e-b6f7480d763e",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": ["emery"],
+    "watchapp": { "watchface": true },
+    "capabilities": ["configurable"],
+    "messageKeys": [
+      "REQUEST_FISH",
+      "FISH_META",
+      "FISH_CHUNK",
+      "FISH_END",
+      "SETTINGS",
+      "BORDER",
+      "SEEDMODE",
+      "GET_SETTINGS",
+      "BGCOLOR",
+      "FGCOLOR",
+      "TEXTCOLOR",
+      "LINEWIDTH"
+    ],
+    "resources": {
+      "media": [
+        {
+          "name": "MENU_ICON",
+          "file": "images/menu_icon.png",
+          "type": "png"
+        }
+      ]
+    }
+  }
+}

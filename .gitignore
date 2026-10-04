@@ -1,0 +1,14 @@
+build/
+.lock-waf_*
+pebble-logs.txt
+.pebble-logs.pid
+
+# dev artifacts
+screenshots/*
+!screenshots/reeltime.png
+tools/font_check.png
+tools/font_preview.svg
+tools/font_preview.svg.png
+
+# third-party dev tooling (fishdraw reference copy is a submodule)
+vendor/pebble-watchface-agent-skill/

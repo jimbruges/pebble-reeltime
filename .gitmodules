@@ -1,0 +1,3 @@
+[submodule "vendor/fishdraw"]
+	path = vendor/fishdraw
+	url = https://github.com/LingDong-/fishdraw
